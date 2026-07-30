@@ -1,7 +1,27 @@
 aid: longwill
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/longwill.png
 name: longwill
-description: longwill is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Longwill (Zhejiang Kangjiu Health Technology Group, 浙江康久康养科技集团有限公司) is a Chinese
+  digital elderly-care and community-health group building what it calls a "China digital elder-care
+  ecosystem" (数字康养). Operating from Xiaoshan District, Hangzhou, it runs 40-plus medical and
+  senior-care institutions across Zhejiang (Hangzhou, Jiaxing, Ningbo, Quzhou, Jinhua, Zhoushan),
+  Chengdu (Sichuan) and Shizuishan (Ningxia), organized around a "five-in-one" care model spanning a
+  digital care cloud, CCRC senior-living complexes, institutional medical-and-elder care, community
+  care and home care. It is a portfolio company of Qiming Venture Partners. As of this enrichment
+  pass Longwill publishes a corporate marketing website (www.longwill.com.cn) but exposes no public
+  developer portal, API, SDK, or documentation surface.
 url: https://raw.githubusercontent.com/api-evangelist/longwill/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Health
+- Elder Care
+- Community Health
+- Digital Health
+- China
+- Qiming Portfolio
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/longwill-domain-security.yml
 - type: Website
-  url: https://longwill.com.cn
+  url: http://www.longwill.com.cn/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
